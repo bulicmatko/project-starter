@@ -1,0 +1,93 @@
+/**
+ * User
+ */
+model User {
+  id String @id() @default(dbgenerated("gen_random_uuid()")) @map("id") @db.Uuid()
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt DateTime @updatedAt() @map("updated_at") @db.Timestamptz()
+
+  email         String  @unique() @map("email") @db.VarChar()
+  emailVerified Boolean @map("email_verified") @db.Boolean()
+
+  name  String  @map("name") @db.VarChar()
+  image String? @map("image") @db.VarChar()
+
+  // Additional Fields
+  profile     UserProfile?
+  preferences UserPreferences?
+
+  accounts Account[]
+  sessions Session[]
+
+  roles RolesOnUsers[]
+
+  @@map("user")
+}
+
+/**
+ * Account
+ */
+model Account {
+  id String @id() @default(dbgenerated("gen_random_uuid()")) @map("id") @db.Uuid()
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt DateTime @updatedAt() @map("updated_at") @db.Timestamptz()
+
+  userId String @map("user_id") @db.Uuid()
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  password String? @map("password") @db.VarChar()
+
+  providerId String @map("provider_id") @db.VarChar()
+  accountId  String @map("account_id") @db.VarChar()
+
+  idToken String? @map("id_token") @db.VarChar()
+
+  accessToken          String?   @map("access_token") @db.VarChar()
+  accessTokenExpiresAt DateTime? @map("access_token_expires_at") @db.Timestamptz()
+
+  refreshToken          String?   @map("refresh_token") @db.VarChar()
+  refreshTokenExpiresAt DateTime? @map("refresh_token_expires_at") @db.Timestamptz()
+
+  scope String? @map("scope") @db.VarChar()
+
+  @@map("account")
+}
+
+/**
+ * Session
+ */
+model Session {
+  id String @id() @default(dbgenerated("gen_random_uuid()")) @map("id") @db.Uuid()
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt DateTime @updatedAt() @map("updated_at") @db.Timestamptz()
+  expiresAt DateTime @map("expires_at") @db.Timestamptz()
+
+  userId String @map("user_id") @db.Uuid()
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  token String @unique() @map("token") @db.VarChar()
+
+  ipAddress String? @map("ip_address") @db.VarChar()
+  userAgent String? @map("user_agent") @db.VarChar()
+
+  @@map("session")
+}
+
+/**
+ * Verification
+ */
+model Verification {
+  id String @id() @default(dbgenerated("gen_random_uuid()")) @map("id") @db.Uuid()
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt DateTime @updatedAt() @map("updated_at") @db.Timestamptz()
+  expiresAt DateTime @map("expires_at") @db.Timestamptz()
+
+  identifier String @unique() @map("identifier") @db.VarChar()
+  value      String @unique() @map("value") @db.VarChar()
+
+  @@map("verification")
+}

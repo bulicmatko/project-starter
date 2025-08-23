@@ -1,0 +1,284 @@
+{
+  "+5WJ1D": [
+    {
+      "type": 0,
+      "value": "App"
+    }
+  ],
+  "0mmwyi": [
+    {
+      "type": 0,
+      "value": "Page Not Found"
+    }
+  ],
+  "10NrHv": [
+    {
+      "type": 0,
+      "value": "Password"
+    }
+  ],
+  "1laLiC": [
+    {
+      "type": 0,
+      "value": "Main Menu"
+    }
+  ],
+  "3UQpW5": [
+    {
+      "type": 0,
+      "value": "Email address invalid"
+    }
+  ],
+  "5TndCn": [
+    {
+      "type": 0,
+      "value": "Sent"
+    }
+  ],
+  "99nTlc": [
+    {
+      "type": 0,
+      "value": "Navigate to..."
+    }
+  ],
+  "ALJulX": [
+    {
+      "type": 0,
+      "value": "Sign in"
+    }
+  ],
+  "APHalK": [
+    {
+      "type": 0,
+      "value": "Profile"
+    }
+  ],
+  "Bbv3im": [
+    {
+      "type": 0,
+      "value": "Enter your email address"
+    }
+  ],
+  "D+0fuV": [
+    {
+      "type": 0,
+      "value": "Admin"
+    }
+  ],
+  "E60AY6": [
+    {
+      "type": 0,
+      "value": "Sign in"
+    }
+  ],
+  "EyrwEp": [
+    {
+      "type": 0,
+      "value": "App"
+    }
+  ],
+  "F6nHmv": [
+    {
+      "type": 0,
+      "value": "Email"
+    }
+  ],
+  "Flc1sZ": [
+    {
+      "type": 0,
+      "value": "Signing in..."
+    }
+  ],
+  "Nvwpni": [
+    {
+      "type": 0,
+      "value": "Enter your password"
+    }
+  ],
+  "OTsF76": [
+    {
+      "type": 0,
+      "value": "Admin"
+    }
+  ],
+  "Rxkpix": [
+    {
+      "type": 0,
+      "value": "Home"
+    }
+  ],
+  "SEm4mS": [
+    {
+      "type": 0,
+      "value": "Delivered"
+    }
+  ],
+  "SiTUHJ": [
+    {
+      "type": 0,
+      "value": "Profile"
+    }
+  ],
+  "Tohgxc": [
+    {
+      "type": 0,
+      "value": "Password too long (max: "
+    },
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "VhC5U3": [
+    {
+      "type": 0,
+      "value": "Auth"
+    }
+  ],
+  "WDCe+t": [
+    {
+      "type": 0,
+      "value": "Preferences"
+    }
+  ],
+  "YgOKNm": [
+    {
+      "type": 0,
+      "value": "Enter your email address"
+    }
+  ],
+  "aHTA8Q": [
+    {
+      "type": 0,
+      "value": "Admin"
+    }
+  ],
+  "bFEQ3C": [
+    {
+      "type": 0,
+      "value": "No results found."
+    }
+  ],
+  "edSaRI": [
+    {
+      "type": 0,
+      "value": "Auth"
+    }
+  ],
+  "gynqZG": [
+    {
+      "type": 0,
+      "value": "Sign In"
+    }
+  ],
+  "lQE+HP": [
+    {
+      "type": 0,
+      "value": "Dashboard"
+    }
+  ],
+  "o06STE": [
+    {
+      "type": 0,
+      "value": "Welcome back!"
+    }
+  ],
+  "paZQi8": [
+    {
+      "type": 0,
+      "value": "Preferences"
+    }
+  ],
+  "pp7znp": [
+    {
+      "type": 0,
+      "value": "Failed to sign in!"
+    }
+  ],
+  "sDUk5W": [
+    {
+      "type": 0,
+      "value": "Welcome back!"
+    }
+  ],
+  "tXQuOo": [
+    {
+      "type": 0,
+      "value": "Email address too long (max: "
+    },
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "uGKHsK": [
+    {
+      "type": 0,
+      "value": "Message Stats"
+    }
+  ],
+  "uwGqG9": [
+    {
+      "type": 0,
+      "value": "Rejected"
+    }
+  ],
+  "vdeovA": [
+    {
+      "type": 0,
+      "value": "Profile"
+    }
+  ],
+  "wrXQPb": [
+    {
+      "type": 0,
+      "value": "Preferences"
+    }
+  ],
+  "xBBues": [
+    {
+      "type": 0,
+      "value": "Enter your password"
+    }
+  ],
+  "y2Q49/": [
+    {
+      "type": 0,
+      "value": "Page Not Found"
+    }
+  ],
+  "y7qdik": [
+    {
+      "type": 0,
+      "value": "Sign in successful!"
+    }
+  ],
+  "yjOVEV": [
+    {
+      "type": 0,
+      "value": "Sign out"
+    }
+  ],
+  "yz0d24": [
+    {
+      "type": 0,
+      "value": "Password too short (min: "
+    },
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ]
+}

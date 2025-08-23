@@ -1,0 +1,77 @@
+/**
+ * User Profile
+ */
+model UserProfile {
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt DateTime @updatedAt() @map("updated_at") @db.Timestamptz()
+
+  userId String @unique() @map("user_id") @db.Uuid()
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  avatarUrl   String? @map("avatar_url") @db.VarChar()
+  displayName String? @map("display_name") @db.VarChar()
+
+  firstName String @map("first_name") @db.VarChar()
+  lastName  String @map("last_name") @db.VarChar()
+
+  @@map("user_profile")
+}
+
+/**
+ * User Preferences
+ */
+model UserPreferences {
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt DateTime @updatedAt() @map("updated_at") @db.Timestamptz()
+
+  userId String @unique() @map("user_id") @db.Uuid()
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  locale         String @map("locale") @db.VarChar()
+  timezone       String @map("timezone") @db.VarChar()
+  firstDayOfWeek Int    @map("first_day_of_week") @db.SmallInt()
+
+  accentColor String @map("accent_color") @db.VarChar()
+  colorScheme String @map("color_scheme") @db.VarChar()
+
+  @@map("user_preferences")
+}
+
+/**
+ * Role
+ */
+model Role {
+  id String @id() @default(dbgenerated("gen_random_uuid()")) @map("id") @db.Uuid()
+
+  createdAt  DateTime  @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt  DateTime  @updatedAt() @map("updated_at") @db.Timestamptz()
+  archivedAt DateTime? @map("archived_at") @db.Timestamptz()
+
+  name        String  @unique() @map("name") @db.VarChar()
+  description String? @map("description") @db.VarChar()
+
+  permissions String? @map("permissions") @db.VarChar()
+
+  users RolesOnUsers[]
+
+  @@map("role")
+}
+
+/**
+ * Roles On Users
+ */
+model RolesOnUsers {
+  roleId String @map("role_id") @db.Uuid()
+  role   Role   @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  userId String @map("user_id") @db.Uuid()
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  activeFrom DateTime? @map("active_from") @db.Timestamptz()
+  activeTo   DateTime? @map("active_to") @db.Timestamptz()
+
+  note String? @map("note") @db.VarChar()
+
+  @@unique([roleId, userId])
+  @@map("roles_on_users")
+}

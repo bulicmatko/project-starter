@@ -1,0 +1,42 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll": "always"
+  },
+  "files.exclude": {
+    "**/.react-router": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/node_modules": true,
+    "**/intl/messages": false,
+    "**/pnpm-lock.yaml": false
+  },
+  "search.exclude": {
+    "**/.react-router": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/node_modules": true,
+    "**/intl/messages": true,
+    "**/pnpm-lock.yaml": true
+  },
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "eslint.rules.customizations": [
+    // Display eslint rules as a warning instead of an error.
+    // Easily distinguish between typescript and eslint errors.
+    { "rule": "*", "severity": "warn" }
+  ],
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  }
+}

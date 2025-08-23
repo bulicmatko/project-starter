@@ -1,0 +1,15 @@
+/**
+ * Prisma Client Settings
+ */
+generator client {
+  provider = "prisma-client-js"
+}
+
+/**
+ * Prisma DB Settings
+ */
+datasource db {
+  provider  = "postgres"
+  url       = env("POSTGRES_URL")
+  directUrl = env("POSTGRES_DIRECT_URL")
+}

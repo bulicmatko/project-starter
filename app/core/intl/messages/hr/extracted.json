@@ -1,0 +1,174 @@
+{
+  "+5WJ1D": {
+    "defaultMessage": "App",
+    "description": "Document title."
+  },
+  "0mmwyi": {
+    "defaultMessage": "Page Not Found",
+    "description": "Document title."
+  },
+  "10NrHv": {
+    "defaultMessage": "Password",
+    "description": "Input label."
+  },
+  "1laLiC": {
+    "defaultMessage": "Main Menu",
+    "description": "Navigation item label."
+  },
+  "3UQpW5": {
+    "defaultMessage": "Email address invalid",
+    "description": "Input validation message."
+  },
+  "5TndCn": {
+    "defaultMessage": "Sent",
+    "description": "Chart label."
+  },
+  "99nTlc": {
+    "defaultMessage": "Navigate to...",
+    "description": "Spotlight search placeholder."
+  },
+  "ALJulX": {
+    "defaultMessage": "Sign in",
+    "description": "Form title."
+  },
+  "APHalK": {
+    "defaultMessage": "Profile",
+    "description": "Page title."
+  },
+  "Bbv3im": {
+    "defaultMessage": "Enter your email address",
+    "description": "Input placeholder."
+  },
+  "D+0fuV": {
+    "defaultMessage": "Admin",
+    "description": "Navigation item label."
+  },
+  "E60AY6": {
+    "defaultMessage": "Sign in",
+    "description": "Document title."
+  },
+  "EyrwEp": {
+    "defaultMessage": "App",
+    "description": "Layout title."
+  },
+  "F6nHmv": {
+    "defaultMessage": "Email",
+    "description": "Input label."
+  },
+  "Flc1sZ": {
+    "defaultMessage": "Signing in...",
+    "description": "Loading message."
+  },
+  "Nvwpni": {
+    "defaultMessage": "Enter your password",
+    "description": "Input validation message."
+  },
+  "OTsF76": {
+    "defaultMessage": "Admin",
+    "description": "Layout title."
+  },
+  "Rxkpix": {
+    "defaultMessage": "Home",
+    "description": "Navigation item label."
+  },
+  "SEm4mS": {
+    "defaultMessage": "Delivered",
+    "description": "Chart label."
+  },
+  "SiTUHJ": {
+    "defaultMessage": "Profile",
+    "description": "Navigation item label."
+  },
+  "Tohgxc": {
+    "defaultMessage": "Password too long (max: {value})",
+    "description": "Input validation message."
+  },
+  "VhC5U3": {
+    "defaultMessage": "Auth",
+    "description": "Layout title."
+  },
+  "WDCe+t": {
+    "defaultMessage": "Preferences",
+    "description": "Navigation item label."
+  },
+  "YgOKNm": {
+    "defaultMessage": "Enter your email address",
+    "description": "Input validation message."
+  },
+  "aHTA8Q": {
+    "defaultMessage": "Admin",
+    "description": "Document title."
+  },
+  "bFEQ3C": {
+    "defaultMessage": "No results found.",
+    "description": "Spotlight empty message."
+  },
+  "edSaRI": {
+    "defaultMessage": "Auth",
+    "description": "Document title."
+  },
+  "gynqZG": {
+    "defaultMessage": "Sign In",
+    "description": "Button label."
+  },
+  "lQE+HP": {
+    "defaultMessage": "Dashboard",
+    "description": "Document title."
+  },
+  "o06STE": {
+    "defaultMessage": "Welcome back!",
+    "description": "Form message."
+  },
+  "paZQi8": {
+    "defaultMessage": "Preferences",
+    "description": "Document title."
+  },
+  "pp7znp": {
+    "defaultMessage": "Failed to sign in!",
+    "description": "Notification message."
+  },
+  "sDUk5W": {
+    "defaultMessage": "Welcome back!",
+    "description": "Notification message."
+  },
+  "tXQuOo": {
+    "defaultMessage": "Email address too long (max: {value})",
+    "description": "Input validation message."
+  },
+  "uGKHsK": {
+    "defaultMessage": "Message Stats",
+    "description": "Chart title."
+  },
+  "uwGqG9": {
+    "defaultMessage": "Rejected",
+    "description": "Chart label."
+  },
+  "vdeovA": {
+    "defaultMessage": "Profile",
+    "description": "Document title."
+  },
+  "wrXQPb": {
+    "defaultMessage": "Preferences",
+    "description": "Page title."
+  },
+  "xBBues": {
+    "defaultMessage": "Enter your password",
+    "description": "Input placeholder."
+  },
+  "y2Q49/": {
+    "defaultMessage": "Page Not Found",
+    "description": "Page title."
+  },
+  "y7qdik": {
+    "defaultMessage": "Sign in successful!",
+    "description": "Notification message."
+  },
+  "yjOVEV": {
+    "defaultMessage": "Sign out",
+    "description": "Navigation item label."
+  },
+  "yz0d24": {
+    "defaultMessage": "Password too short (min: {value})",
+    "description": "Input validation message."
+  }
+}

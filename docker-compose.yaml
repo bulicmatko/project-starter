@@ -1,0 +1,26 @@
+name: project-starter
+
+services:
+  postgres:
+    image: postgres:17.5
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_PORT}:5432
+    restart: always
+
+  redis:
+    image: redis:8.2
+    volumes:
+      - redis:/data
+    ports:
+      - ${REDIS_PORT}:6379
+    restart: always
+
+volumes:
+  postgres:
+  redis:
